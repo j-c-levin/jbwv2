@@ -20,7 +20,6 @@ public class player_movement : MonoBehaviour
         y_bottom_boundary = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, Camera.main.nearClipPlane)).y - width_of_player;
     }
 
-    // Update is called once per frame
     public void Update()
     {
         // Set up the values for how far the player should travel

@@ -6,12 +6,13 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class ui_health : MonoBehaviour
 {
-    public player_health player;
+    private player_health player;
     private Text health_text;
 
     public void Start()
     {
         health_text = GetComponent<Text>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<player_health>();
     }
 
     public void Update()
